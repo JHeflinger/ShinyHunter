@@ -42,7 +42,7 @@ def check_gastly(image):
                 purbles += 1
             else:
                 pixels[i, j] = (0, 0, 0)
-    return purbles < 3300
+    return purbles < 3300 and purbles > 200
 
 def run(cmd):
     global timer

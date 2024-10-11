@@ -1,0 +1,4 @@
+wait 1000
+click left 5385 1182
+wait 1000
+press a 500

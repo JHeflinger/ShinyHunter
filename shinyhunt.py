@@ -2,6 +2,8 @@ import pyautogui
 import keyboard
 import time
 import sys
+import mss 
+from PIL import Image
 
 if len(sys.argv) != 2 and len(sys.argv) != 3:
     print("Please specify a macro file")
@@ -18,6 +20,29 @@ class Timer:
         self.curr = time.time_ns()
 
 timer = Timer()
+
+def capture(x, y, w, h):
+    with mss.mss() as sct:
+        region = {"left": x, "top": y, "width": w, "height": h}
+        screenshot = sct.grab(region)
+        img = Image.frombytes("RGB", screenshot.size, screenshot.rgb)
+        return img
+
+def within(value, target, threshold):
+    return value > (target - threshold) and value < (target + threshold)
+
+def check_gastly(image):
+    pixels = image.load()
+    purbles = 0
+    threshold = 10
+    for i in range(image.width):
+        for j in range(image.height):
+            r, g, b = pixels[i, j]
+            if within(r, 205, threshold) and within(g, 165, threshold) and within(b, 197, threshold):
+                purbles += 1
+            else:
+                pixels[i, j] = (0, 0, 0)
+    return purbles < 3300
 
 def run(cmd):
     global timer
@@ -58,7 +83,17 @@ def run(cmd):
         pyautogui.click(button=args[1])
         pyautogui.moveTo(oldx, oldy)
     elif args[0] == "check":
-        exit()
+        if lena != 6:
+            print("Invalid format for check command")
+            exit()
+        if args[1] == "gastly":
+            image = capture(int(args[2]), int(args[3]), int(args[4]), int(args[5]))
+            if (check_gastly(image)):
+                print("A SHINY WAS FOUND!!")
+                exit()
+        else:
+            print("Unsupported check detected")
+            exit()
     else:
         print("invalid macro command detected: " + cmd)
         exit()
@@ -77,8 +112,12 @@ if len(sys.argv) == 3:
 if loop:
     while True:
         for line in lines:
+            if len(line) > 0 and line[0] == '#':
+                continue
             run(line.strip())
 else:
     for line in lines:
+        if len(line) > 0 and line[0] == '#':
+            continue
         run(line.strip())
 print("Done running macro!")

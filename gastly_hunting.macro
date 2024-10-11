@@ -1,4 +1,110 @@
-wait 1000
+# ##################
+# hunting the gastly
+# ##################
+
+# sweet scent 1
+click left 5485 1182
+click left 5246 1447
+wait 12000
+check gastly 4930 1000 400 200
+click left 4765 1523
+wait 3000
+
+# sweet scent 2
 click left 5385 1182
-wait 1000
+click left 5246 1447
+wait 12000
+check gastly 4930 1000 400 200
+click left 4765 1523
+wait 3000
+
+# sweet scent 3
+click left 5385 1182
+click left 5246 1447
+wait 12000
+check gastly 4930 1000 400 200
+click left 4765 1523
+wait 3000
+
+# sweet scent 4
+click left 5385 1182
+click left 5246 1447
+wait 12000
+check gastly 4930 1000 400 200
+click left 4765 1523
+wait 3000
+
+# sweet scent 5
+click left 5385 1182
+click left 5246 1447
+wait 12000
+check gastly 4930 1000 400 200
+click left 4765 1523
+wait 3000
+
+# sweet scent 6
+click left 5385 1182
+click left 5246 1447
+wait 12000
+check gastly 4930 1000 400 200
+click left 4765 1523
+wait 3000
+
+# ##################
+# pokecenter refresh
+# ##################
+
+# click into window
+click left 5085 1182
+
+# exit floor 2
 press a 500
+wait 1000
+
+# exit floor 1
+press w 900
+press d 3000
+press a 50
+press s 600
+press d 200
+wait 1000
+
+# exit building
+press a 1250
+press s 1700
+wait 1000
+
+# walk to pokecenter
+press a 1800
+press w 50
+press a 800
+
+# heal
+press w 3000
+press space 6000
+
+# exit pokecenter
+press s 1000
+wait 1000
+
+# walk to poke tower
+press d 1500
+press s 100
+press d 950
+press w 100
+wait 1000
+
+# go to first floor
+press w 1500
+press d 1500
+wait 1000
+
+# go to second floor
+press w 670
+press a 2300
+press s 600
+press a 300
+wait 1000
+
+# get into position
+press d 500

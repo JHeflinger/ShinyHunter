@@ -11,7 +11,7 @@ click left 4765 1523
 wait 3000
 
 # sweet scent 2
-click left 5385 1182
+click left 5485 1182
 click left 5246 1447
 wait 12000
 check gastly 4930 1000 400 200
@@ -19,7 +19,7 @@ click left 4765 1523
 wait 3000
 
 # sweet scent 3
-click left 5385 1182
+click left 5485 1182
 click left 5246 1447
 wait 12000
 check gastly 4930 1000 400 200
@@ -27,7 +27,7 @@ click left 4765 1523
 wait 3000
 
 # sweet scent 4
-click left 5385 1182
+click left 5485 1182
 click left 5246 1447
 wait 12000
 check gastly 4930 1000 400 200
@@ -35,7 +35,7 @@ click left 4765 1523
 wait 3000
 
 # sweet scent 5
-click left 5385 1182
+click left 5485 1182
 click left 5246 1447
 wait 12000
 check gastly 4930 1000 400 200
@@ -43,7 +43,7 @@ click left 4765 1523
 wait 3000
 
 # sweet scent 6
-click left 5385 1182
+click left 5485 1182
 click left 5246 1447
 wait 12000
 check gastly 4930 1000 400 200

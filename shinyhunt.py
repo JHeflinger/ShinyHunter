@@ -44,6 +44,29 @@ def check_gastly(image):
                 pixels[i, j] = (0, 0, 0)
     return purbles < 3300 and purbles > 200
 
+def wait(duration):
+    waittime = duration
+    timer.reset()
+    while timer.get() < waittime:
+        if keyboard.is_pressed('esc'):
+            print("Exiting...")
+            exit()
+
+def keypress(key, duration):
+    pyautogui.keyDown(key)
+    wait(duration)
+    pyautogui.keyUp(key)
+
+def type(message):
+    for c in message:
+        keypress(c, 100)
+
+def click(buttonstr, x, y):
+    oldx, oldy = pyautogui.position()
+    pyautogui.moveTo(x, y)
+    pyautogui.click(button=buttonstr)
+    pyautogui.moveTo(oldx, oldy)
+
 def run(cmd):
     global timer
     if keyboard.is_pressed('esc'):
@@ -54,34 +77,17 @@ def run(cmd):
     args = cmd.split(" ")
     lena = len(args)
     if args[0] == "wait":
-        waittime = int(args[1])
-        timer.reset()
-        while timer.get() < waittime:
-            if keyboard.is_pressed('esc'):
-                print("Exiting...")
-                exit()
+        wait(int(args[1]))
     elif args[0] == "press":
         if lena != 3:
             print("Invalid format for press command")
             exit()
-        pyautogui.keyDown(args[1])
-        waittime = int(args[2])
-        timer.reset()
-        while timer.get() < waittime:
-            if keyboard.is_pressed('esc'):
-                print("Exiting...")
-                exit()
-        pyautogui.keyUp(args[1])
+        keypress(args[1], int(args[2]))
     elif args[0] == "click":
         if lena != 4:
             print("Invalid format for click command")
             exit()
-        xc = int(args[2])
-        yc = int(args[3])
-        oldx, oldy = pyautogui.position()
-        pyautogui.moveTo(xc, yc)
-        pyautogui.click(button=args[1])
-        pyautogui.moveTo(oldx, oldy)
+        click(args[1], int(args[2]), int(args[3]))
     elif args[0] == "check":
         if lena != 6:
             print("Invalid format for check command")
@@ -90,6 +96,9 @@ def run(cmd):
             image = capture(int(args[2]), int(args[3]), int(args[4]), int(args[5]))
             if (check_gastly(image)):
                 print("A SHINY WAS FOUND!!")
+                click("left", 9994, 3161)
+                type("shiny found")
+                keypress("enter", 100)
                 exit()
         else:
             print("Unsupported check detected")

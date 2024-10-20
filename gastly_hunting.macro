@@ -3,50 +3,316 @@
 # ##################
 
 # sweet scent 1
-click left 5485 1182
-click left 5246 1447
+click left 4725 825
 wait 12000
+save 4630 700 1000 800
 check gastly 4930 1000 400 200
+> print "I FOUND A GASTLY!"
+> click left 9994 3161
+> type "shiny found"
+> press enter 100
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
 click left 4765 1523
 wait 3000
+
+# check for screenshots
+debug -692 -195 15 15
+> copy 4050 700 1980 1080
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> click left -1192 -215
+> type "verified"
+> press enter 100
+
+# check for restart
+wild -692 -195 15 15
+> click left -1192 -215
+> type "standing by"
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
+> click left 4800 1000
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> click left 4980 1390
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> move 4800 500
+> down left
+> wait 500
+> move 4800 900
+> wait 500
+> up left
+> wait 500
+> down left
+> wait 500
+> move 4800 500
+> up left
+> click left 4800 1000
 
 # sweet scent 2
-click left 5485 1182
-click left 5246 1447
+click left 4725 825
 wait 12000
+save 4630 700 1000 800
 check gastly 4930 1000 400 200
+> print "I FOUND A GASTLY!"
+> click left 9994 3161
+> type "shiny found"
+> press enter 100
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
 click left 4765 1523
 wait 3000
+
+# check for screenshots
+debug -692 -195 15 15
+> copy 4050 700 1980 1080
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> click left -1192 -215
+> type "verified"
+> press enter 100
+
+# check for restart
+wild -692 -195 15 15
+> click left -1192 -215
+> type "standing by"
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
+> click left 4800 1000
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> click left 4980 1390
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> move 4800 500
+> down left
+> wait 500
+> move 4800 900
+> wait 500
+> up left
+> wait 500
+> down left
+> wait 500
+> move 4800 500
+> up left
+> click left 4800 1000
 
 # sweet scent 3
-click left 5485 1182
-click left 5246 1447
+click left 4725 825
 wait 12000
+save 4630 700 1000 800
 check gastly 4930 1000 400 200
+> print "I FOUND A GASTLY!"
+> click left 9994 3161
+> type "shiny found"
+> press enter 100
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
 click left 4765 1523
 wait 3000
+
+# check for screenshots
+debug -692 -195 15 15
+> copy 4050 700 1980 1080
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> click left -1192 -215
+> type "verified"
+> press enter 100
+
+# check for restart
+wild -692 -195 15 15
+> click left -1192 -215
+> type "standing by"
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
+> click left 4800 1000
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> click left 4980 1390
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> move 4800 500
+> down left
+> wait 500
+> move 4800 900
+> wait 500
+> up left
+> wait 500
+> down left
+> wait 500
+> move 4800 500
+> up left
+> click left 4800 1000
 
 # sweet scent 4
-click left 5485 1182
-click left 5246 1447
+click left 4725 825
 wait 12000
+save 4630 700 1000 800
 check gastly 4930 1000 400 200
+> print "I FOUND A GASTLY!"
+> click left 9994 3161
+> type "shiny found"
+> press enter 100
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
 click left 4765 1523
 wait 3000
+
+# check for screenshots
+debug -692 -195 15 15
+> copy 4050 700 1980 1080
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> click left -1192 -215
+> type "verified"
+> press enter 100
+
+# check for restart
+wild -692 -195 15 15
+> click left -1192 -215
+> type "standing by"
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
+> click left 4800 1000
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> click left 4980 1390
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> move 4800 500
+> down left
+> wait 500
+> move 4800 900
+> wait 500
+> up left
+> wait 500
+> down left
+> wait 500
+> move 4800 500
+> up left
+> click left 4800 1000
 
 # sweet scent 5
-click left 5485 1182
-click left 5246 1447
+click left 4725 825
 wait 12000
+save 4630 700 1000 800
 check gastly 4930 1000 400 200
+> print "I FOUND A GASTLY!"
+> click left 9994 3161
+> type "shiny found"
+> press enter 100
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
 click left 4765 1523
 wait 3000
 
+# check for screenshots
+debug -692 -195 15 15
+> copy 4050 700 1980 1080
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> click left -1192 -215
+> type "verified"
+> press enter 100
+
+# check for restart
+wild -692 -195 15 15
+> click left -1192 -215
+> type "standing by"
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
+> click left 4800 1000
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> click left 4980 1390
+> wait 3000
+> click left 4800 1320
+> wait 3000
+> move 4800 500
+> down left
+> wait 500
+> move 4800 900
+> wait 500
+> up left
+> wait 500
+> down left
+> wait 500
+> move 4800 500
+> up left
+> click left 4800 1000
+
 # sweet scent 6
-click left 5485 1182
-click left 5246 1447
+click left 4725 825
 wait 12000
+save 4630 700 1000 800
 check gastly 4930 1000 400 200
+> print "I FOUND A GASTLY!"
+> click left 9994 3161
+> type "shiny found"
+> press enter 100
+> click left -1192 -215
+> hotkey ctrl v
+> press enter 100
+> standby -692 -195 15 15
+> click left -1192 -215
+> type "verified"
+> press enter 100
 click left 4765 1523
 wait 3000
 

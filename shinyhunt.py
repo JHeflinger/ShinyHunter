@@ -112,13 +112,12 @@ def colorcheck(x, y, w, h, soft=False):
         wait(2000)
 
 def standby(x, y, w, h):
-    color = colorcheck(x, y, w, h)
-    if color == "green":
-        return
-    elif color == "red":
-        exit()
-    else:
-        standby(x, y, w, h)
+    while True:
+        color = colorcheck(x, y, w, h)
+        if color == "green":
+            return
+        elif color == "red":
+            exit()
 
 def killall():
     pyautogui.keyDown("esc")
